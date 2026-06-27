@@ -1,76 +1,1000 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta name="google-site-verification" content="zOMBkCD5HtUd9TemveSZdFS2OL-ADZfCIz4Nn4x6yEo" />
+<meta name="google-site-verification" content="zOMBkCD5HtUd9TemveSZdFS2OL-ADZfCIz4Nn4x6yEo" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tikko Live Agency</title>
+
+<title>Tikko Agency</title>
+
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Georgia,serif}
-body{min-height:100vh;background:linear-gradient(120deg,#ead8ff,#d89cff,#efc7ff);overflow:hidden}
-header{width:100%;padding:25px 30px;display:flex;justify-content:space-between;align-items:center}
-.logo{display:flex;align-items:center;gap:15px;color:#b21cff;font-size:32px;font-weight:bold}
-.logo img{width:auto;height:50px;border-radius:12px}
-nav a{margin-left:45px;text-decoration:none;color:#745779;font-size:22px;font-weight:bold}
-nav .active{color:#222;border-bottom:4px solid #222;padding-bottom:15px}
-.container{display:flex;align-items:center;justify-content:space-between;padding:70px 9%}
-.left{width:55%}
-h1{color:white;font-size:80px;line-height:1.25}
-.line{width:300px;height:8px;background:#d72fff;border-radius:20px;margin:20px 0}
-.btn{display:flex;align-items:center;justify-content:center;width:650px;height:75px;border-radius:25px;border:2px solid white;background:linear-gradient(90deg,#7d00ff,#ff349b,#ffae2b);color:white;font-size:25px;font-weight:bold;text-decoration:none;cursor:pointer}
-.desc{color:white;font-size:25px;line-height:1.5;margin-top:25px}
-.small{color:white;margin-top:25px}
-.store{display:flex;gap:20px;margin-top:20px}
-.store button{background:white;border:none;padding:15px 30px;border-radius:15px;font-size:17px}
-.apk{margin-top:20px}
-.apk button{background:transparent;color:white;border:2px solid white;padding:15px 30px;border-radius:15px}
-.right{position:relative;width:45%;height:600px}
-.phone{position:absolute;width:290px;border-radius:35px;box-shadow:0 20px 40px #777}
-.phone1{right:40px;top:70px;z-index:3}
-.phone2{right:250px;top:130px;opacity:.7}
-.phone3{right:-70px;top:160px;opacity:.8}
-@media(max-width:900px){body{overflow:auto}.container{flex-direction:column}.left{width:100%}h1{font-size:50px}.btn{width:100%}.right{width:100%;margin-top:50px}nav{display:none}}
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+
+body{
+
+font-family:Georgia,serif;
+
+color:#403b55;
+
+}
+
+
+
+/* NAVBAR */
+
+
+nav{
+
+position:fixed;
+
+top:0;
+
+width:100%;
+
+height:90px;
+
+background:white;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 50px;
+
+z-index:1000;
+
+}
+
+
+.logo img{
+
+width:auto;
+
+height:auto;
+
+max-height:55px;
+
+}
+
+
+
+.menu a{
+
+text-decoration:none;
+
+color:#403b55;
+
+font-size:22px;
+
+font-weight:bold;
+
+margin-left:45px;
+
+}
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+
+height:100vh;
+
+
+background:
+
+linear-gradient(120deg,#e9ddff,#ee67ff);
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+
+padding:120px 8% 50px;
+
+
+overflow:hidden;
+
+
+}
+
+
+
+.hero-left{
+
+width:55%;
+
+}
+
+
+
+.hero-left h1{
+
+
+font-size:95px;
+
+line-height:1.1;
+
+color:white;
+
+margin-bottom:45px;
+
+
+}
+
+
+
+
+.btn{
+
+
+width:810px;
+
+height:100px;
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+
+border-radius:25px;
+
+
+border:3px solid white;
+
+
+background:
+
+linear-gradient(90deg,#8225ff,#ff9228);
+
+
+font-size:32px;
+
+font-weight:bold;
+
+
+color:white;
+
+text-decoration:none;
+
+
+}
+
+
+
+
+
+.hero-left p{
+
+
+color:white;
+
+font-size:27px;
+
+line-height:1.5;
+
+
+margin:30px 0;
+
+
+}
+
+
+
+.hero-left h4{
+
+color:white;
+
+margin-bottom:20px;
+
+font-size:18px;
+
+}
+
+
+
+.store{
+
+
+display:flex;
+
+gap:20px;
+
+}
+
+
+
+.store img{
+
+
+width:185px;
+
+height:60px;
+
+}
+
+
+
+.apk{
+
+
+margin-top:20px;
+
+width:185px;
+
+height:60px;
+
+border-radius:15px;
+
+
+background:transparent;
+
+border:2px solid white;
+
+color:white;
+
+font-size:18px;
+
+
+}
+
+
+
+
+
+
+/* 3 MOBILE IMAGES */
+
+
+.hero-right{
+
+
+width:45%;
+
+height:650px;
+
+position:relative;
+
+
+}
+
+
+
+.phone{
+
+position:absolute;
+
+height:auto;
+
+
+}
+
+
+
+
+.left-phone{
+
+
+width:300px;
+
+right:300px;
+
+top:130px;
+
+z-index:1;
+
+
+}
+
+
+
+.main-phone{
+
+
+width:360px;
+
+right:120px;
+
+top:30px;
+
+z-index:3;
+
+
+}
+
+
+
+.right-phone{
+
+
+width:300px;
+
+right:0;
+
+top:130px;
+
+z-index:1;
+
+
+}
+
+
+
+
+
+
+
+/* SECTIONS */
+
+
+section{
+
+padding:120px 8%;
+
+}
+
+
+
+h2{
+
+
+text-align:center;
+
+font-size:70px;
+
+margin-bottom:60px;
+
+
+}
+
+
+
+
+
+
+/* AGENCY */
+
+
+.cards{
+
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+
+}
+
+
+
+.card{
+
+
+padding:45px;
+
+border-radius:30px;
+
+font-size:22px;
+
+min-height:220px;
+
+
+}
+
+
+.c1{
+
+background:#fff8df;
+
+}
+
+.c2{
+
+background:#dcffff;
+
+}
+
+.c3{
+
+background:#ffdff5;
+
+}
+
+.c4{
+
+background:#ddffdd;
+
+}
+
+
+
+
+
+
+
+/* STATS */
+
+
+.stats{
+
+
+display:flex;
+
+gap:50px;
+
+
+}
+
+
+
+.stat{
+
+
+flex:1;
+
+
+padding:50px;
+
+
+background:#f3f8ff;
+
+
+border-radius:30px;
+
+
+font-size:22px;
+
+
+}
+
+
+
+
+
+
+/* ABOUT */
+
+
+#about p{
+
+
+font-size:28px;
+
+line-height:1.8;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+
+nav{
+
+padding:20px;
+
+}
+
+
+.menu a{
+
+font-size:15px;
+
+margin-left:15px;
+
+}
+
+
+
+.hero{
+
+
+height:auto;
+
+flex-direction:column;
+
+text-align:center;
+
+padding-top:130px;
+
+
+}
+
+
+
+.hero-left{
+
+
+width:100%;
+
+}
+
+
+
+.hero-left h1{
+
+font-size:50px;
+
+}
+
+
+
+.btn{
+
+width:100%;
+
+height:80px;
+
+font-size:20px;
+
+}
+
+
+
+.hero-right{
+
+
+width:100%;
+
+height:450px;
+
+
+}
+
+
+
+.main-phone{
+
+
+width:260px;
+
+right:80px;
+
+
+}
+
+
+.left-phone{
+
+
+width:220px;
+
+right:170px;
+
+
+}
+
+
+.right-phone{
+
+
+width:220px;
+
+right:0;
+
+
+}
+
+
+
+.cards{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.stats{
+
+
+flex-direction:column;
+
+
+}
+
+
+}
+
+
+
 </style>
+
+
 </head>
+
+
+
 <body>
 
-<header>
-<div class="logo"><img src="logo.png"></div>
+
+
+
+
+
+<!-- NAV -->
+
 <nav>
-<a class="active">Home</a>
-<a>Agency</a>
-<a>About</a>
-<a>Contact us</a>
+
+
+<div class="logo">
+
+<img src="logo.png">
+
+</div>
+
+
+
+<div class="menu">
+
+
+<a href="#home">Home</a>
+
+
+<a href="#agency">Agency</a>
+
+
+<a href="#about">About</a>
+
+
+
+</div>
+
+
 </nav>
-</header>
 
-<section class="container">
-<div class="left">
-<h1>Become Tikko Live<br>Agency</h1>
-<div class="line"></div>
 
-<a href="https://videochat.kissu.site/invite-agent_new/?inviter_id=73477834&c=cde" target="_blank" class="btn">
+
+
+
+
+
+
+
+<!-- HERO -->
+
+
+<section class="hero" id="home">
+
+
+
+<div class="hero-left">
+
+
+
+<h1>
+
+Become Tikko Live<br>
+
+Agency
+
+</h1>
+
+
+
+
+
+<a class="btn"
+
+href="https://videochat.kissu.site/invite-agent_new/?inviter_id=73477834&c=cde">
+
+
 🤝 TIKKO AGENCY LINK
+
+
 </a>
 
-<p class="desc">Connect anyone, anywhere, anytime. Help users convey values and share happiness in a timely, stable and honest manner.</p>
 
-<p class="small">Download the latest version of the application</p>
+
+
+
+
+<p>
+
+
+Connect anyone, anywhere, anytime. Help users convey values and share happiness in a timely, stable and honest manner.
+
+
+</p>
+
+
+
+
+
+<h4>
+
+Download the latest version of the application
+
+</h4>
+
+
+
 
 <div class="store">
-<button><br>App Store</button>
-<button>▶<br>Google Play</button>
+
+
+<img src="apple.png">
+
+
+<img src="google.png">
+
+
 </div>
 
-<div class="apk"><button>🤖 Apk Download</button></div>
+
+
+<button class="apk">
+
+🤖 Apk Download
+
+</button>
+
+
+
+
 </div>
 
-<div class="right">
-<img class="phone phone2" src="phone-left.png">
-<img class="phone phone1" src="phone-main.png">
-<img class="phone phone3" src="phone-right.png">
+
+
+
+
+
+
+<div class="hero-right">
+
+
+<img class="phone left-phone" src="mobile-left.png">
+
+
+<img class="phone main-phone" src="mobile-main.png">
+
+
+<img class="phone right-phone" src="mobile-right.png">
+
+
 </div>
+
+
+
 
 </section>
+
+
+
+
+
+
+
+
+
+<!-- AGENCY -->
+
+
+<section id="agency">
+
+
+<h2>
+
+Become an Agency
+
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="card c1">
+
+<h3>1. Provide fix-salary package</h3>
+
+<br>
+
+Tikko provide the fixed-salary package to the supreme hosts.
+
+
+</div>
+
+
+
+<div class="card c2">
+
+<h3>2. Self withdrawal</h3>
+
+<br>
+
+Hosts can withdraw their salary by themselves through local bank and E-wallet.
+
+
+</div>
+
+
+
+<div class="card c3">
+
+<h3>3. Multiple rewards</h3>
+
+<br>
+
+There are multiple free-target rewards to help hosts easily earn on Tikko.
+
+
+</div>
+
+
+
+
+<div class="card c4">
+
+<h3>4. High commission</h3>
+
+<br>
+
+Agents can earn commission up to 20% of total revenue.
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- STATS -->
+
+
+<section>
+
+
+<div class="stats">
+
+
+
+<div class="stat">
+
+<h1>5 Million+</h1>
+
+Users
+
+<br><br>
+
+Millions have already joined our platform.
+
+
+</div>
+
+
+
+
+
+<div class="stat">
+
+<h1>10 Million+</h1>
+
+Minutes Streamed Daily
+
+<br><br>
+
+Hosts stream over 10 million minutes daily.
+
+
+</div>
+
+
+
+
+
+<div class="stat">
+
+<h1>100k+</h1>
+
+Video Creator
+
+<br><br>
+
+Creators are building success with us.
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section id="about">
+
+
+<h2>
+
+About us
+
+</h2>
+
+
+
+
+<p>
+
+
+Tikko is the most popular social & live streaming app and brings more social, more fun, more life to our users.
+
+We are dedicated to connecting the world and enabling everyone to share their beautiful moments.
+
+We aim to empower a new generation of users with an exciting new social language where they can showcase, discover and stay connected.
+
+
+</p>
+
+
+
+</section>
+
+
+
+
+
+
 </body>
+
 </html>
